@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Include header component -->
+            <div id="header-placeholder"></div>
+        </header>
+        
+        <main>
+            <h1>Welcome to Your Dashboard</h1>
+            <section id="user-posts">
+                <h2>Your Posts</h2>
+                <div id="posts-list">
+                    <!-- User posts will be dynamically loaded here -->
+                </div>
+            </section>
+            <section id="new-post">
+                <h2>Create New Post</h2>
+                <form id="post-form">
+                    <input type="text" id="post-title" placeholder="Post Title" required>
+                    <textarea id="post-content" placeholder="Write your post here..." required></textarea>
+                    <button type="submit">Publish</button>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <!-- Include footer component -->
+            <div id="footer-placeholder"></div>
+        </footer>
+    </div>
+    
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

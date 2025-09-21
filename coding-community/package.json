@@ -1,0 +1,20 @@
+{
+  "name": "coding-community",
+  "version": "1.0.0",
+  "description": "A community platform for users to share their works and interact with each other.",
+  "main": "src/assets/js/main.js",
+  "scripts": {
+    "start": "live-server src/pages",
+    "build": "echo 'Build process not defined yet.'"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
