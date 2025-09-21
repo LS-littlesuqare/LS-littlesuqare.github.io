@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>蓝客联盟LQ Team</title>
     <link rel="icon" href="./assets/文件.ico" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <body>
     <header>
         <h1>蓝客联盟LQ Team</h1>
         <nav>
@@ -29,12 +76,12 @@
             <article>
                 <h3>博客标题1</h3>
                 <p>这是第一篇博客的内容摘要。点击阅读更多了解详情。</p>
-                <a href="https://example.com/blog1">阅读更多</a>
+                <a href="https://example.com/blog1" target="_blank">阅读更多</a>
             </article>
             <article>
                 <h3>博客标题2</h3>
                 <p>这是第二篇博客的内容摘要。点击阅读更多了解详情。</p>
-                <a href="https://example.com/blog2">阅读更多</a>
+                <a href="https://example.com/blog2" target="_blank">阅读更多</a>
             </article>
         </section>
 
@@ -42,7 +89,7 @@
             <h2>联系我们</h2>
             <p>如果您有任何问题，请通过以下方式联系我们：</p>
             <ul>
-                <li>邮箱:example@example.com</li>
+                <li>邮箱：<a href="mailto:example@example.com">example@example.com</a></li>
             </ul>
         </section>
     </main>
@@ -50,6 +97,5 @@
     <footer>
         <p>版权所有 © 2025 蓝客联盟LQ Team</p>
     </footer>
-</body>
 </body>
 </html>
