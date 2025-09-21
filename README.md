@@ -1,48 +1,67 @@
-# 编程社区项目
+# Programming Showcase Site
 
 ## 项目简介
-编程社区是一个专为编程爱好者打造的平台，用户可以在这里登录、提交自己的作品，并与其他开发者交流。该网站提供了友好的用户界面和丰富的功能，旨在促进编程学习和作品分享。
+该项目是一个编程作品展示网站，允许用户提交自己的编程作品，支持Turbowarp、Python、C/C++和Java四种语言。用户可以通过注册和登录功能管理自己的作品，并在网站上展示。
 
-## 项目结构
+## 功能
+- **首页**：展示热门编程作品。
+- **编程作品展示**：用户可以查看所有提交的编程作品，并按最火和最新进行排序。
+- **个人信息展示**：用户可以查看和编辑自己的个人信息，包括头像、名称、账户号和简介。
+- **登录与注册功能**：用户可以创建账户并登录，以便提交和管理自己的作品。
+
+## 技术栈
+- 前端：HTML, CSS, JavaScript
+- 后端：Node.js (假设使用)
+- 数据库：MongoDB (假设使用)
+
+## 文件结构
 ```
-programming-community
+programming-showcase-site
+├── public
+│   ├── index.html
+│   ├── styles
+│   │   └── main.css
+│   └── scripts
+│       └── main.js
 ├── src
-│   ├── assets
-│   │   ├── css
-│   │   │   └── styles.css        # 网站样式定义
-│   │   ├── js
-│   │   │   └── main.js           # 主要JavaScript代码
-│   │   └── images                 # 图像资源文件夹
-│   ├── pages
-│   │   ├── index.html             # 网站首页
-│   │   ├── login.html             # 用户登录页面
-│   │   └── dashboard.html         # 用户作品展示页面
-│   └── components
-│       └── header.html            # 网站头部组件
-├── index.html                      # 网站主入口文件
-└── README.md                       # 项目文档
+│   ├── components
+│   │   ├── Header.js
+│   │   ├── Footer.js
+│   │   ├── HomePage.js
+│   │   ├── ShowcasePage.js
+│   │   ├── ProfilePage.js
+│   │   └── AuthPage.js
+│   ├── services
+│   │   ├── api.js
+│   │   └── auth.js
+│   ├── utils
+│   │   └── helpers.js
+│   └── app.js
+├── package.json
+├── README.md
+└── .gitignore
 ```
 
-## 功能说明
-- **用户登录**：用户可以通过登录页面输入用户名和密码进行身份验证。
-- **作品提交**：用户可以在作品展示页面查看和管理自己的作品。
-- **动态内容加载**：网站使用JavaScript动态加载最新作品，提升用户体验。
-
-## 使用方法
+## 安装与使用
 1. 克隆项目到本地：
    ```
    git clone <repository-url>
    ```
 2. 进入项目目录：
    ```
-   cd programming-community
+   cd programming-showcase-site
    ```
-3. 打开 `index.html` 文件以访问网站。
-
-## 开发说明
-- 使用 HTML、CSS 和 JavaScript 构建网站。
-- 确保在不同设备上进行响应式设计。
-- 所有的样式和脚本文件存放在 `src/assets` 目录下，页面文件存放在 `src/pages` 目录下。
+3. 安装依赖：
+   ```
+   npm install
+   ```
+4. 启动项目：
+   ```
+   npm start
+   ```
 
 ## 贡献
 欢迎任何形式的贡献！请提交问题或拉取请求。
+
+## 许可证
+该项目遵循MIT许可证。
