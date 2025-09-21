@@ -1,45 +1,112 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f9f9f9;
     color: #333;
 }
+
 header {
-    background: #333;
+    background: linear-gradient(90deg, #007BFF, #0056b3);
     color: #fff;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 1rem 0 0;
 }
+
 header nav ul li {
     display: inline;
     margin: 0 15px;
 }
+
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
+
+header nav ul li a:hover {
+    color: #ffdd57;
+}
+
 main {
     padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 section {
     margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+section h2 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+section#blog article {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fdfdfd;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+section#blog article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+section#blog article h3 {
+    margin-top: 0;
+}
+
+section#blog article a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+section#blog article a:hover {
+    background: #0056b3;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
     background: #333;
     color: #fff;
+    margin-top: 2rem;
 }
-a {
-    color: #007BFF;
+
+footer a {
+    color: #ffdd57;
     text-decoration: none;
 }
-a:hover {
+
+footer a:hover {
     text-decoration: underline;
 }
