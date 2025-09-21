@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蓝客联盟 LQ TEAM</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>欢迎来到蓝客联盟 LQ TEAM</h1>
+        <nav>
+            <ul>
+                <li><a href="#register">注册</a></li>
+                <li><a href="#login">登录</a></li>
+                <li><a href="#posts">文章</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="register">
+            <h2>注册账号</h2>
+            <form id="registerForm">
+                <label for="username">用户名:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">密码:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">注册</button>
+            </form>
+        </section>
+        <section id="login">
+            <h2>登录账号</h2>
+            <form id="loginForm">
+                <label for="loginUsername">用户名:</label>
+                <input type="text" id="loginUsername" name="loginUsername" required>
+                <label for="loginPassword">密码:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <button type="submit">登录</button>
+            </form>
+        </section>
+        <section id="posts">
+            <h2>文章发布</h2>
+            <form id="postForm">
+                <label for="postTitle">文章标题:</label>
+                <input type="text" id="postTitle" name="postTitle" required>
+                <label for="postContent">文章内容:</label>
+                <textarea id="postContent" name="postContent" required></textarea>
+                <button type="submit">发布文章</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 蓝客联盟 LQ TEAM. 保留所有权利。</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
