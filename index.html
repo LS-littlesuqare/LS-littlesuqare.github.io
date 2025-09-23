@@ -19,7 +19,10 @@
         button:hover { background: #005fa3; }
         #loginBox { text-align: center; margin-top: 32px; }
         .error { color: #d8000c; margin-bottom: 12px; }
+        .md-tip { font-size: 0.95em; color: #888; margin-bottom: 8px; }
     </style>
+    <!-- 引入 marked.js 用于 Markdown 解析 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -37,6 +40,12 @@
             <input type="text" id="title" required>
             <label for="content">文章内容</label>
             <textarea id="content" rows="5" required></textarea>
+            <div class="md-tip">
+                <label>
+                    <input type="checkbox" id="isMarkdown">
+                    使用 Markdown 格式（支持标题、列表、代码等）
+                </label>
+            </div>
             <button type="submit">发布文章</button>
         </form>
     </div>
@@ -54,10 +63,13 @@
                 articlesDiv.innerHTML = '<p style="text-align:center;color:#888;">暂无文章</p>';
             } else {
                 articles.forEach(article => {
+                    let contentHtml = article.isMarkdown
+                        ? marked.parse(article.content)
+                        : article.content.replace(/\n/g, '<br>');
                     articlesDiv.innerHTML += `
                         <div class="article">
                             <div class="article-title">${article.title}</div>
-                            <div class="article-content">${article.content.replace(/\n/g, '<br>')}</div>
+                            <div class="article-content">${contentHtml}</div>
                         </div>
                     `;
                 });
@@ -79,12 +91,14 @@
             e.preventDefault();
             const title = document.getElementById('title').value.trim();
             const content = document.getElementById('content').value.trim();
+            const isMarkdown = document.getElementById('isMarkdown').checked;
             if (!title || !content) return;
             const articles = JSON.parse(localStorage.getItem('articles') || '[]');
-            articles.unshift({ title, content });
+            articles.unshift({ title, content, isMarkdown });
             localStorage.setItem('articles', JSON.stringify(articles));
             document.getElementById('title').value = '';
             document.getElementById('content').value = '';
+            document.getElementById('isMarkdown').checked = false;
             loadArticles();
         }
 
