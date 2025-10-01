@@ -4,22 +4,27 @@ body {
     background: #f7f7f7;
     margin: 0;
     color: #333;
-    padding-top: 80px;
+    padding-top: 80px; /* 防止内容被导航栏遮挡 */
 }
 
-/* 导航栏居中 */
 .nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: #fff;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 32px;
     box-shadow: 0 2px 8px #eee;
     z-index: 1000;
-    padding: 18px 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 36px;
+    margin-right: 32px;
+    margin-left: 32px;
 }
 
 .nav a {
@@ -39,7 +44,8 @@ body {
     color: #005fa3;
 }
 
-/* 欢迎区 */
+
+/* 欢迎区和内容区 */
 .banner {
     max-width: 700px;
     margin: 0 auto 32px auto;
@@ -54,6 +60,12 @@ body {
     margin: 0 0 12px 0;
     font-size: 2.2em;
     color: #0078d7;
+}
+
+.banner h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.4em;
+    color: #005fa3;
 }
 
 .banner p {
