@@ -1,6 +1,12 @@
 body {
-    color:black
+    color:black;
+    background-color:whitesmoke;
+    font: 20px Arial, Helvetica, sans-serif
+}
+a {
+    text-decoration: none;
+    color:black;
 }
 #center{
-    text-align:center
+    text-align:center;
 }
