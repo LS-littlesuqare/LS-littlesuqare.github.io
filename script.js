@@ -1,10 +1,9 @@
-function toggleLogin() {
-    const loginForm = document.getElementById('loginForm');
-    if (loginForm.style.display === 'block') {
-        loginForm.style.display = 'none';
-    } else {
-        loginForm.style.display = 'block';
-    }
+function openLoginModal() {
+    document.getElementById('loginModal').style.display = 'block';
+}
+
+function closeLoginModal() {
+    document.getElementById('loginModal').style.display = 'none';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
