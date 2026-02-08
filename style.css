@@ -23,6 +23,7 @@ body {
     position: fixed;
     height: 100vh;
     overflow-y: auto;
+    z-index: 1;
 }
 
 .sidebar-content {
@@ -51,6 +52,7 @@ body {
     align-items: center;
     justify-content: center;
     color: #333;
+    outline: none;
 }
 
 .login-icon:hover {
@@ -77,6 +79,7 @@ body {
     width: 300px;
     border-radius: 8px;
     position: relative;
+    z-index: 1001;
 }
 
 .close {
@@ -87,6 +90,7 @@ body {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    z-index: 1002;
 }
 
 .close:hover {

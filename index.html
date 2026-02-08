@@ -11,7 +11,7 @@
     <div class="container">
         <aside class="sidebar">
             <div class="sidebar-content">
-                <button class="login-icon" onclick="openLoginModal()">
+                <button class="login-icon" id="loginButton">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
@@ -28,7 +28,7 @@
 
     <div id="loginModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <span class="close" id="closeModal">&times;</span>
             <div class="login-form-modal">
                 <h2>登录</h2>
                 <input type="text" placeholder="账号" class="login-input">
