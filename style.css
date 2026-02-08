@@ -33,6 +33,7 @@ body {
     flex: 1;
     margin-left: 200px;
     padding: 20px;
+    min-width: 0;
 }
 
 .article-container {
@@ -41,13 +42,23 @@ body {
     padding: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .sidebar {
         width: 180px;
     }
     
     .main-content {
         margin-left: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 160px;
+    }
+    
+    .main-content {
+        margin-left: 160px;
     }
 }
 
@@ -60,5 +71,6 @@ body {
     
     .main-content {
         margin-left: 0;
+        width: 100%;
     }
 }
