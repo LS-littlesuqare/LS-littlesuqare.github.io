@@ -11,13 +11,23 @@
     <div class="container">
         <aside class="sidebar">
             <div class="sidebar-content">
+                <div class="login-section">
+                    <button class="login-btn" onclick="toggleLogin()">登录</button>
+                    <div class="login-form" id="loginForm">
+                        <input type="text" placeholder="账号" class="login-input">
+                        <input type="password" placeholder="密码" class="login-input">
+                        <button class="submit-btn">确认</button>
+                    </div>
+                </div>
             </div>
         </aside>
+        
         <main class="main-content">
             <div class="article-container">
             </div>
         </main>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
